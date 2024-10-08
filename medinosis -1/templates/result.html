@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Prediction Results</h2>
+        <p class="text-center">Based on the symptoms provided, here are the predictions:</p>
+
+        <h4 class="text-center text-primary">Decision Tree Prediction: {{ prediction_tree }}</h4>
+        <h4 class="text-center text-success">Random Forest Prediction: {{ prediction_rf }}</h4>
+        <h4 class="text-center text-warning">Naive Bayes Prediction: {{ prediction_nb }}</h4>
+
+        <div class="text-center mt-4">
+            <a href="/" class="btn btn-secondary">Go Back</a>
+        </div>
+    </div>
+
+</body>
+</html>

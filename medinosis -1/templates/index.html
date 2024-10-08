@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Disease Prediction System</h2>
+        
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label for="symptom1">Symptom 1</label>
+                <select name="symptom1" id="symptom1" class="form-control">
+                    <option value="">-- Select Symptom --</option>
+                    {% for symptom in symptoms %}
+                    <option value="{{ symptom }}">{{ symptom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom2">Symptom 2</label>
+                <select name="symptom2" id="symptom2" class="form-control">
+                    <option value="">-- Select Symptom --</option>
+                    {% for symptom in symptoms %}
+                    <option value="{{ symptom }}">{{ symptom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom3">Symptom 3</label>
+                <select name="symptom3" id="symptom3" class="form-control">
+                    <option value="">-- Select Symptom --</option>
+                    {% for symptom in symptoms %}
+                    <option value="{{ symptom }}">{{ symptom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom4">Symptom 4</label>
+                <select name="symptom4" id="symptom4" class="form-control">
+                    <option value="">-- Select Symptom --</option>
+                    {% for symptom in symptoms %}
+                    <option value="{{ symptom }}">{{ symptom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="symptom5">Symptom 5</label>
+                <select name="symptom5" id="symptom5" class="form-control">
+                    <option value="">-- Select Symptom --</option>
+                    {% for symptom in symptoms %}
+                    <option value="{{ symptom }}">{{ symptom }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+
+</body>
+</html>
